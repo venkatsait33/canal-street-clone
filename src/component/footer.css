@@ -1,0 +1,52 @@
+.vendor-cta {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.vendor-cta::before,
+.vendor-cta::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: repeating-linear-gradient(
+    to right,
+    black,
+    black 2px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+.vendor-cta::before {
+  top: 0;
+  left: 0;
+}
+
+.vendor-cta::after {
+  bottom: 0;
+  left: 0;
+}
+
+.vendor-text {
+  font-family: "Times New Roman", serif;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.vendor-button {
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  text-transform: lowercase;
+  padding: 10px 20px;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.vendor-button:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,93 @@
+home-hero_text {
+  padding-bottom: 4px;
+  background-image: repeating-linear-gradient(
+      -45deg,
+      #ffb400,
+      #ffb400 1px,
+      transparent 0,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #ffb400,
+      #ffb400 1px,
+      transparent 0,
+      transparent 12.2px
+    );
+  background-position: 0 103%, 2px 103%;
+  background-size: 17px 10px;
+  background-repeat: repeat-x;
+  animation: 0.8s infinite normal b;
+  animation-timing-function: linear;
+}
+
+/* Main container */
+.container {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #000;
+  position: relative;
+}
+
+/* Dashed line animations */
+.dashed-line {
+  height: 2px;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+  padding: 10px;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+  animation: border-animation 1s linear infinite;
+  animation-play-state: running;
+}
+
+
+/* Content section */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Individual event items */
+.event {
+  text-align: center;
+  width: 30%;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* See All Button */
+.see-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.see-all-button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.see-all-button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
