@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 
 const DashedBorder = () => {
     return (
-        <div className="container">
+        <div className="container ">
             {/* Top dashed line animation */}
             <motion.div
                 className="dashed-line"
                 animate={{ backgroundPosition: ["0% 0", "100% 0"] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
             >
-                <div className="content">
+                <div className=" content">
                     <div className="event">
                         <p className="date">09/21</p>
                         <p>Small Business Retail Pop Up Weekend!</p>

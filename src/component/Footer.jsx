@@ -3,6 +3,7 @@ import './footer.css'
 import FooterCard from './FooterCard'
 import { LuFacebook } from "react-icons/lu";
 import { PiPencil } from 'react-icons/pi';
+import NewsLetter from './NewsLetter';
 
 const footerData = [
     {
@@ -38,6 +39,9 @@ const Footer = () => {
                     })
                 }
 
+            </div>
+            <div className='mt-10'>
+                <NewsLetter/>
             </div>
         </div>
     )

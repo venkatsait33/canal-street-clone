@@ -1,24 +1,21 @@
-home-hero_text {
+.home-hero_text {
   padding-bottom: 4px;
-  background-image: repeating-linear-gradient(
-      -45deg,
-      #ffb400,
-      #ffb400 1px,
-      transparent 0,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      45deg,
-      #ffb400,
-      #ffb400 1px,
-      transparent 0,
-      transparent 12.2px
-    );
-  background-position: 0 103%, 2px 103%;
-  background-size: 17px 10px;
-  background-repeat: repeat-x;
-  animation: 0.8s infinite normal b;
-  animation-timing-function: linear;
+    background-image: repeating-linear-gradient(-45deg,#ffb400,#ffb400 1px,transparent 0,transparent 12px),repeating-linear-gradient(45deg,#ffb400,#ffb400 1px,transparent 0,transparent 12.2px);
+    background-position: 0 103%,2px 103%;
+    background-size: 17px 10px;
+    background-repeat: repeat-x;
+    animation: .8s infinite normal b;
+    animation-timing-function: linear
+}
+
+@keyframes b {
+    0% {
+        background-position-x: 0,2px;
+    }
+
+    to {
+        background-position-x: 17px,19px;
+    }
 }
 
 /* Main container */
@@ -73,7 +70,11 @@ home-hero_text {
 .see-all-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  top:140px;
 }
 
 .see-all-button {

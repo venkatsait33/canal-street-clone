@@ -5,13 +5,13 @@ import Footer from "./component/Footer"
 
 const App = () => {
   return (
-    <div className=' max-w-screen-2xl'>
+    <div className='bg-white max-w-screen-2xl'>
       <div>
         <Header />
         <main className="relative">
           <About />
         </main>
-        <Footer />
+       
       </div>
     </div>
   )

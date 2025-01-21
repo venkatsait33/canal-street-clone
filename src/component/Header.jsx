@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div className='relative'  >
-            <div className='absolute navbar top-10 left-3 z-9'>
+        <div className='block'  >
+            <div className='fixed z-10 navbar top-10 left-[1px] w-[100%] will-change-transform '>
                 <a href="/" className=''>
                     <svg width="60px" height="60px"  viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"   >
                         <defs></defs>

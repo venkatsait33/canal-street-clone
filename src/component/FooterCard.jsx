@@ -7,9 +7,9 @@ const FooterCard = (item) => {
     const { title, icon, link } = item
     return (
         <div className="">
-            <div className="mt-2" >
+            <div className="mt-10" >
                 <motion.div
-                    className={`map-container h-[200px] w-[400px]  ${isAnimating ? "animate-border" : ""}`}
+                    className={`map-container h-[200px] w-[300px]  ${isAnimating ? "animate-border" : ""}`}
                     onMouseEnter={() => setIsAnimating(true)} // Start animation on hover
                     onMouseLeave={() => setIsAnimating(false)}// Pause animation on hover out
                 >

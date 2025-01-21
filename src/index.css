@@ -6,12 +6,31 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: org, "sanserif";
+  font-family: ogg, "sanserif";
+  color:black;
 }
 
-@font-face {
-  font-family: "ogg";
-  src: url("../src/assets/fonts/Ogg-Roman.otf") format("opentype");
+@layer base {
+  @font-face {
+    font-family: "ogg";
+    src: url("../src/assets/fonts/Ogg-Roman.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "apercu";
+    src: url("../src/assets/fonts/Apercu_Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "apercu mono";
+    src: url("../src/assets/fonts/apercu-mono.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
 }
 
 /* Container styling */
