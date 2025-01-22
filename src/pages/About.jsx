@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import  { useRef } from 'react'
 import DashedBorderAnimation from '../component/DashedBorderAnimation'
 import DashedBorder from '../component/DashedBorder'
 import Footer from '../component/Footer'
@@ -27,9 +27,9 @@ const About = () => {
     const isInView = useInView(ref, { once: true });
     return (
         <>
-            <div>
-                <div className='relative flex flex-col  justify-center lg:w-[80%] h-full gap-2 '>
-                    <h1 className='flex flex-col ml-20 justify-center mt-[200px] text-[75px] text-black  font-semibold mb-10 leading-[86px] tracking-normal  '>
+            <div className='flex'>
+                <div className='relative flex flex-col justify-center h-full gap-2 '>
+                    <h1 className='flex flex-col ml-20 justify-center mt-[150px] max-md:text-3xl lg:text-[75px] text-black  font-semibold mb-10 leading-[86px] tracking-normal  '>
 
                         Canal Street Market is a carefully curated retail market, food hall & community space space open year-round at 265 Canal Street.
 
@@ -51,8 +51,8 @@ const About = () => {
                         </picture>
                     </motion.div>
 
-                    <div className='relative flex flex-col items-start justify-center ml-20 bg-white'>
-                        <h1 className='text-[150px] text-black '>A New Kind of Market</h1>
+                    <div className='relative flex flex-col items-start justify-center bg-white'>
+                        <h1 className='text-[130px] tracking-tighter text-black '>A New Kind of Market</h1>
                         <div className='grid lg:gap-10 max-sm:grid-cols-1 max-md:grid-cols-2 lg:grid-cols-3'>
                             {cardData.map((item, index) => {
                                 return (
@@ -114,14 +114,9 @@ const About = () => {
                         <Footer />
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <p>
-                            
-                    </p></div>
-                </div>
-            </div>
-      </>
+              
+            </div >
+        </>
     )
 }
 

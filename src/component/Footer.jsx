@@ -23,14 +23,14 @@ const footerData = [
 
 const Footer = () => {
     return (
-        <div className='p-10 bg-white'>
+        <div className=''>
             <div>
                 <div className="vendor-cta">
-                    <p className="vendor-text">Interested in becoming a vendor?</p>
+                    <p className="mb-10 text-3xl">Interested in becoming a vendor?</p>
                     <button className="vendor-button">click here</button>
                 </div>
             </div>
-            <div className='grid gap-4 bg-white sm:justify-center lg:gap-10 lg:grid-cols-3'>
+            <div className='grid gap-4 sm:justify-center lg:gap-10 lg:grid-cols-3'>
                 {
                     footerData.map((item, index) => {
                         return (<div key={index}>

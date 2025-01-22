@@ -13,8 +13,8 @@ const NewsLetter = () => {
                   <div>
                       <p className="text-[24px] font-semibold text-black">Stay up to date with our newsletter</p>
                   </div>
-                  <div className='flex justify-between w-full px-4 py-2 text-gray-700 bg-white border border-black focus:border-transparent'>
-                      <input type="email" className='bg-transparent outline-none' placeholder='Email' />
+                  <div className='flex justify-between w-full px-4 py-2 bg-transparent border border-black focus:border-transparent'>
+                      <input type="email" className='bg-transparent outline-none placeholder:text-black ' placeholder='Email' />
                       <TbArrowRightDashed className="text-3xl text-black"/>
                   </div>
 

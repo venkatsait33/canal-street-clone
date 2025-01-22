@@ -9,6 +9,9 @@
   font-family: ogg, "sanserif";
   color:black;
 }
+.title-tile{
+  font-family: apercu mono, sans-serif;
+}
 
 @layer base {
   @font-face {

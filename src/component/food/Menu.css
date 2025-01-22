@@ -1,0 +1,22 @@
+
+
+.menu-item {
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.image-container {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 200px;
+  height: auto;
+
+  transition: opacity 0.3s ease;
+}

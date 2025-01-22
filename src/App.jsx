@@ -1,5 +1,6 @@
 import Header from "./component/Header"
 import About from "./pages/About"
+import Tab from "./pages/Tab"
 import './App.css'
 import Footer from "./component/Footer"
 
@@ -9,7 +10,9 @@ const App = () => {
       <div>
         <Header />
         <main className="relative">
-          <About />
+          {/* <About /> */}
+
+          <Tab/>
         </main>
        
       </div>
